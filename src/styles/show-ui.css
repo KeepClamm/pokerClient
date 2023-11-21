@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+i {
+  font-style: normal;
+}
+
+input,
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+strong,
+em,
+span {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+.show-flex-box-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.show-flex-box-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.show-flex-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.show-flex-grow-1 {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+
+.b-bottom,
+.b-top,
+.b-left,
+.b-right {
+  position: relative;
+  border: none;
+}
+
+.b-bottom:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #eee;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.b-top:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #eee;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.b-left:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border-left: 1px solid #eee;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.b-right:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border-right: 1px solid #eee;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.b-around {
+  position: relative;
+  border: none;
+}
+
+.b-around:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border: 1px solid #eee;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+
+/* 超出隐藏 start*/
+.hide-line1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hide-line2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.hide-line2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.hide-line3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.hide-line4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.hide-line5 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+/* 超出隐藏 end*/
+
+.box-scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.box-scrollbar-hidden {
+  -webkit-overflow-scrolling: touch;
+}
+
+/*********底线**********/
+.base-line {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 0.17rem;
+  text-align: center;
+  padding-bottom: 0.24rem;
+  font-size: 0.12rem;
+  margin-top: 0.52rem;
+}
+
+.base-line span {
+  position: relative;
+  font-size: 0.12rem;
+  color: #C8C8CC;
+}
+
+.base-line span:after {
+  content: '';
+  position: absolute;
+  left: -100%;
+  top: 0.085rem;
+  background: #eee;
+  width: 0.77rem;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.base-line span:before {
+  content: '';
+  position: absolute;
+  right: -100%;
+  top: 0.085rem;
+  background: #eee;
+  width: 0.77rem;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.show-b-bottom-half {
+  position: relative;
+}
+
+.show-b-bottom-half::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #eee), color-stop(50%, transparent));
+  background-image: linear-gradient(0deg, #eee 50%, transparent 50%);
+}
+
+/* 标签隐藏 visibility */
+.visibility-hidden {
+  visibility: hidden;
+}
+.visibility-visible {
+  visibility: visible;
+}
+
+/* vant全局样式变量配置 */
+:root:root {
+  --van-button-primary-background: #CB1309;
+  --van-button-primary-border-color: #CB1309;
+  --van-button-default-height: 39px;
+  --van-nav-bar-icon-color: #000;
+  --van-nav-bar-height: 50px;
+}
+
+.fixed-btn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
+  background-color: #fff;
+  border-top: 1px solid #FAF9F9;
+}
